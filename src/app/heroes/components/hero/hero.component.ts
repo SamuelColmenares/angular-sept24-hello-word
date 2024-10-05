@@ -24,4 +24,12 @@ export class HeroComponent {
   getHeroDescription():string{
     return `${ this.name } - ${ this.age }`;
   }
+
+  reset():void {
+    this.name = 'Ironman';
+    this.age = 40;
+    // document.querySelectorAll('h1').forEach(element => {
+    //   element.innerHTML ='<h1>Hola desde JS</h1>';
+    // });
+  }
 }
